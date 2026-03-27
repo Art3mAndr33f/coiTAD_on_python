@@ -1,0 +1,72 @@
+# Input data (heavy, download separately)
+data/*.mcool
+data/*.cool
+
+# Generated matrices (reproducible)
+**/data/*.hic
+**/data_chr*/*.hic
+
+# Features (reproducible, very large)
+**/features*/feature_radius_*.txt
+**/features_HDBSCAN/
+**/features_OPTICS/
+**/features_shared/
+**/features_chr*/
+
+# ChIP-Seq raw downloads (reproducible)
+**/chipseq_data/*.broadPeak
+**/chipseq_data/*.narrowPeak
+**/chipseq_data/*.bigWig
+
+# Tuning run directories (heavy)
+tuning_results/run_*/
+tuning_cv_results/run_*/
+
+# Temp
+__tmp_val/
+__tmp/
+temp.py
+temp_check.py
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Environments
+.venv/
+venv/
+env/
+coitad_env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.tmp
+
+# KEEP (results, reports, visualizations)
+!**/all_results.csv
+!**/all_comparisons.csv
+!**/aggregate_report.txt
+!**/tuning_report.txt
+!**/tuning_cv_report.txt
+!**/tuning_results.csv
+!**/phase1_results.csv
+!**/phase2_results.csv
+!**/aggregated_rankings.csv
+!**/validation_results.csv
+!**/validation_report.txt
+!**/comparison_report.txt
+!**/Quality/Readme.txt
+!**/visualizations/**/*.png
+!**/*.png
+!**/chipseq_data/*.bed

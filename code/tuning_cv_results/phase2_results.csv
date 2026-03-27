@@ -1,0 +1,2 @@
+chromosome,min_samples,xi,min_cluster_size,n_tads,mean_size_kb,median_size_kb,best_radius,quality_score,time_sec,status,avg_CTCF_peaks,avg_H3K4me1_peaks,avg_H3K4me3_peaks,avg_H3K27ac_peaks,avg_enrichment_all,dataset
+chr17,15,0.01,0.05,65,933.8,650.0,2,0,111.2,OK,2.177,3.346,0.9,1.323,1.937,H1_DpnII
